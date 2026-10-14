@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Special Birthday Surprise ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background-glow"></div>
+
+  <main class="container">
+    <section id="lock-screen" class="screen">
+      <div class="lock-icon">🔒</div>
+      <p class="eyebrow">A LITTLE SECRET FOR YOU</p>
+      <h1>Someone has a surprise<br>for you ❤️</h1>
+      <p class="subtitle">Enter the secret PIN to unlock it</p>
+
+      <div id="pin-display" class="pin-display">○ ○ ○</div>
+
+      <div class="keypad">
+        <button class="key" data-digit="1">1</button>
+        <button class="key" data-digit="2">2</button>
+        <button class="key" data-digit="3">3</button>
+        <button class="key" data-digit="4">4</button>
+        <button class="key" data-digit="5">5</button>
+        <button class="key" data-digit="6">6</button>
+        <button class="key" data-digit="7">7</button>
+        <button class="key" data-digit="8">8</button>
+        <button class="key" data-digit="9">9</button>
+        <button class="key" data-action="clear">C</button>
+        <button class="key" data-digit="0">0</button>
+        <button class="key" data-action="delete">⌫</button>
+      </div>
+
+      <button id="unlock-button" class="primary-button">
+        Unlock My Surprise ❤️
+      </button>
+      <p id="pin-message" class="status-message" aria-live="polite"></p>
+    </section>
+
+    <section id="welcome-screen" class="screen hidden">
+      <p class="eyebrow">YOU UNLOCKED SOMETHING SPECIAL</p>
+      <h1>Happy Birthday! 🎂</h1>
+      <p class="subtitle">A little surprise made just for you.</p>
+      <button id="continue-button" class="primary-button">
+        Open Your Surprise ✨
+      </button>
+    </section>
+
+    <section id="memories-screen" class="screen hidden">
+      <p class="eyebrow">LITTLE MOMENTS, BIG MEMORIES</p>
+      <h1>Our Special Memories ❤️</h1>
+      <div id="photo-gallery" class="photo-gallery"></div>
+      <button id="letter-button" class="primary-button">
+        Read Your Birthday Letter 💌
+      </button>
+    </section>
+
+    <section id="letter-screen" class="screen hidden">
+      <div class="letter-card">
+        <p class="eyebrow">FROM THE HEART</p>
+        <h1>A Letter For You 💌</h1>
+        <p id="letter-text">
+          Today is all about celebrating you.
+          May your birthday bring you happiness,
+          beautiful memories, and wonderful new beginnings.
+          You deserve a day full of love and smiles.
+        </p>
+        <button id="celebrate-button" class="primary-button">
+          Let's Celebrate! 🎉
+        </button>
+      </div>
+      <div id="confetti-area" aria-hidden="true"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
