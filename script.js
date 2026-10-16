@@ -68,10 +68,11 @@ document.querySelectorAll(".key").forEach(button => {
 document.getElementById("unlock-button").addEventListener("click", () => {
   if (enteredPIN === CORRECT_PIN) {
     
-const music = document.getElementById("background-music");
-music.play().catch(() => {
+
+document.getElementById("background-music").play().catch(() => {
   console.log("Tap Play Music to start the music.");
 });
+
 
     pinMessage.textContent = "Unlocked! Your surprise awaits ❤️";
 
