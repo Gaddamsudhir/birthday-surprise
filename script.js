@@ -92,10 +92,16 @@ function loadPhotos() {
   const gallery = document.getElementById("photo-gallery");
 
   // Add your photo filenames here after uploading them.
-  const photos = [
-    { src: "photos/photo1.jpg", label: "Beautiful memory ❤️" },
-    { src: "photos/photo2.jpg", label: "A special moment 💗" }
-  ];
+const photos = [
+  {
+    src: "photos/photo1.jpeg",
+    label: "Beautiful memory ❤️"
+  },
+  {
+    src: "photos/photo2.jpeg",
+    label: "A special moment 💗"
+  }
+];
 
   photos.forEach(photo => {
     const img = document.createElement("img");
