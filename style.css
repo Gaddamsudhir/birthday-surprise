@@ -214,6 +214,9 @@ h1 {
   font-size: 14px;
   line-height: 2;
   white-space: pre-line;
+  overflow-wrap: anywhere;
+  max-height: 45vh;
+  overflow-y: auto;
   margin: 22px 0 28px;
 }
 
