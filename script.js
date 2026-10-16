@@ -175,3 +175,28 @@ document.addEventListener("keydown", event => {
     document.getElementById("unlock-button").click();
   }
 });
+
+
+const music = document.getElementById("background-music");
+const musicToggle = document.getElementById("music-toggle");
+
+musicToggle.addEventListener("click", async () => {
+  try {
+    if (music.paused) {
+      await music.play();
+    } else {
+      music.pause();
+    }
+  } catch (error) {
+    console.log("Music could not be played.", error);
+  }
+});
+
+music.addEventListener("play", () => {
+  musicToggle.textContent = "⏸ Pause Music";
+});
+
+music.addEventListener("pause", () => {
+  musicToggle.textContent = "🎵 Play Music";
+});
+
